@@ -36,9 +36,14 @@ module SessionsHelper
     cookies.delete(:user_id)
     cookies.delete(:remember_token)
   end
+
   def log_out
     forget(current_user)
     session.delete(:user_id)
     @current_user = nil
+  end
+
+  def current_user?(user)
+    user && user == current_user
   end
 end
