@@ -16,6 +16,10 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'bootstrap-sass', '3.3.7'
+gem 'active_storage_validations'
+gem 'image_processing'
+gem 'mini_magick'
+gem 'aws-sdk-s3', '1.46.0', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
